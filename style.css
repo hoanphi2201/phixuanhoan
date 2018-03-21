@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header {
+    background-color: red;
+    text-align: center;
+    padding: 15px;
+    height: 180px;
+}
+.header h1{
+    color: white;
+    margin-bottom: 10px;
+
+}
+.create {
+    position: relative;
+    font-size: 0;
+}
+.create input {
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 50%;
+    border: none;
+}
+.create button{
+    font-size: 16px;
+    padding: 5px;
+    width: 15%;
+    cursor: pointer;
+    border: none;
+}
+.create button:hover{
+    background-color: #a5a5a5;
+    color: white;
+}
+.main ul{
+    margin: 0;
+    padding: 0;
+}
+.main ul li{
+    font-size: 16px;
+    list-style: none;
+    background-color: #f9f9f9;
+    padding: 10px 10px 10px 40px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.main ul li:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+.main ul li.completed{
+    text-decoration: line-through;
+    background-color: #a5a5a5;
+    color: #fff;
+}
+.main ul li .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+}
+.main ul li.completed:before{
+    content: '';
+    position: absolute;
+    left: 12px;
+    padding: 10px 15px;
+    background: url('./tick.svg') no-repeat left;
+}
+    
+.main ul li:hover .close{
+    background-color: red;
+    color: #fff;
+    padding: 10px 15px;
+}
+.main span{
+    float: right;
+}
